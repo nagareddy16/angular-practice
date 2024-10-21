@@ -1,0 +1,13 @@
+
+<!-- created a new component and surrounded with that component -->
+<app-card>
+    <article>
+        <h2>{{task.title}}</h2>
+        <!-- using the pipe where it b=makes the readable way & transforming template data type to pipe  -->
+        <time>{{task.dueDate | date}}</time>
+        <p>{{task.summary}}</p>
+        <p class="actions">
+            <button (click)="onComplete()">Complete</button>
+        </p>
+    </article>
+</app-card>
